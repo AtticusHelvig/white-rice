@@ -15,7 +15,7 @@ cd ~/.white-rice
 
 If you want to copy all of the configurations, run the following command in the directory you cloned to.
 ```
-stow -t ~ -S
+stow -t ~ -S kitty
 ```
 
 #### Specific Package
