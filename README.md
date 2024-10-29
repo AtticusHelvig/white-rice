@@ -1,6 +1,9 @@
 # white-rice
 Configuration files (dotfiles) for a white themed linux setup.
 
+> [!NOTE]
+> It is recommended to install the [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/) for kitty.
+
 ## Installing
 
 First, clone the repository into your home directory.
