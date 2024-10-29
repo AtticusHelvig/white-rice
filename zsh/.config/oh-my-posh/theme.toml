@@ -1,0 +1,48 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+
+final_space = true
+version = 2
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+
+    [[blocks.segments]]
+    type = 'path'
+    style = 'powerline'
+    leading_powerline_symbol = ''
+    powerline_symbol = ''
+    foreground = 'black'
+    background = 'white'
+
+        [blocks.segments.properties]
+            style = 'full'
+
+    [[blocks.segments]]
+    type = 'git'
+    style = 'powerline'
+    powerline_symbol = ''
+    foreground = 'black'
+    background = 'lightWhite'
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }}{{ if gt .Behind 0 }} ⇣{{ end }}{{ if gt .Ahead 0 }} ⇡{{ end }} '
+
+        [blocks.segments.properties]
+        fetch_status = true
+        branch_icon = ''
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newline = true
+
+    [[blocks.segments]]
+        type = 'text'
+        style = 'plain'
+        foreground = 'white'
+        background = 'transparent'
+        template = ''
+
+[transient_prompt]
+    foreground = 'white'
+    background = 'transparent'
+    template = ' '

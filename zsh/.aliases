@@ -1,0 +1,9 @@
+# Add color
+alias ls='ls --color'
+alias grep='grep --color'
+
+# Extended ls
+alias la='ls -a'
+alias ll='ls -la'
+
+alias tree='tree -a -I .git'
