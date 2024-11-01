@@ -18,7 +18,7 @@ cd ~/.white-rice
 
 If you want to copy all of the configurations, run the following command in the directory you cloned to.
 ```
-stow -t ~ -S kitty zsh hyprpaper
+stow -t ~ -S kitty zsh hyprpaper waybar
 ```
 
 #### Specific Package
